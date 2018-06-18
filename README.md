@@ -2,7 +2,7 @@
 
 Scramble Word Game
 
-Scramble was a word game hosted by Delphi in the 1990s.  Then it was hosted at scramblelovers.com for several years, with source code re-written in java. This is Scramble written in Rust.  
+Scramble was a word game hosted by Delphi in the 1990s.  Then it was hosted at scramblelovers.com for several years, with source code re-written in Java. This is Scramble written in Rust.  
 
 Scramble uses a simple chat server on port 21, accessible with telnet or any nicer client software.  It is hosted at scramblelovers.com
 
@@ -10,7 +10,8 @@ It is like Boggle, users around the world play a round that lasts 90 seconds.  T
 
 Stats are available with chat commands, and any user can start a game similarly.  The server controls the timing, calculating etc.  This code is mostly the server. 
 
-=======================
+
+```telnet
  user SunKing2 has enterd (4 players now)
  user cleetus as entered (5 players now)
 Cleetus > hi peeps
@@ -21,9 +22,14 @@ A T N I
 O S U Q
 R U S T
 
+> [...elided stuff... I madly type in words, pressing Enter after each one...]
+
 Round has ended... 
 Scores: 
-SunKing2   .... [score stuff ellided]
+SunKing2   .... [score stuff elided]
+```
+
+The chat is typical, allowing talking before or during the game, private messaging, and blocking of individual users.
 
 visit the live game at
 http://scramblelovers.com
