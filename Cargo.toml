@@ -1,0 +1,6 @@
+[package]
+name = "scramble"
+version = "0.1.0"
+authors = ["SunKing2 <scramble.mps9z@ncf.ca>"]
+
+[dependencies]
