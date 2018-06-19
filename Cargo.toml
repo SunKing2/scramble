@@ -9,5 +9,7 @@ documentation = "http://scramblelovers.com"
 description = """
 Scramble word game.  Boggle-like word game hosted at http://scramblelovers.com.  Multi-user, chat-enabled web game online.
 """
+keywords = ["boggle", "scramble", "scrabble", "words", "game"]
+categories = ["games"]
 
 [dependencies]
