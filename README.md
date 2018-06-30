@@ -2,6 +2,8 @@
 
 Scramble Word Game
 
+Try now in your browser: [http://alwayswantedtoplay.com]
+
 Scramble was a word game hosted by Delphi in the 1990s.  Then it was hosted at scramblelovers.com for several years, with source code re-written in Java. This is Scramble written in Rust.  
 
 Scramble uses a simple chat server on port 21, accessible with telnet or any nicer client software.  It is hosted at scramblelovers.com
