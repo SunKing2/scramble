@@ -11,8 +11,9 @@ This is Scramble written in Rust and Elm
 * cd scramble
 * cd rust_src
 * cargo run
-* # it'll tell ya what to do next to see some stuff.
-* # end geeky developer stuff
+It'll tell ya what to do next to see some stuff.
+
+End geeky developer stuff
 ---
 
 Scramble uses a simple chat server on port 21, accessible with telnet or any nicer client software.  It is hosted at scramblelovers.com
