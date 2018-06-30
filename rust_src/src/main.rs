@@ -48,10 +48,13 @@ fn main() {
 
     let mut my_json = String::new();
     for person in person_iter {
-        my_json =  format!("{:?}", json!(person.unwrap()));
+        let p  = json!(person.unwrap());
+        my_json = p.to_string();
     }
 
+    println!("here is json");
     println!("{}", my_json);
+    println!("that was json");
 
 
     let listener = TcpListener::bind("127.0.0.1:8088").unwrap();
@@ -60,7 +63,6 @@ fn main() {
     for stream in listener.incoming() {
         match stream {
             Ok(mut stream) => {
-                //let response = b"Hello World";
                 let response = my_json.as_bytes();
                 stream.write(response).expect("Response failed");
             }
@@ -68,5 +70,5 @@ fn main() {
                 println!("Unable to connect: {}", e);
             }
         }
-}
+    }
 }
