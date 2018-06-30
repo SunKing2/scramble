@@ -46,9 +46,13 @@ fn main() {
         }
     }).unwrap();
 
+    let mut my_json = String::new();
     for person in person_iter {
-        println!("{:?}", json!(person.unwrap()));
+        my_json =  format!("{:?}", json!(person.unwrap()));
     }
+
+    println!("{}", my_json);
+
 
     let listener = TcpListener::bind("127.0.0.1:8088").unwrap();
     println!("starting a json server on localhost 8088. Use http://localhost:8088/");
@@ -56,7 +60,8 @@ fn main() {
     for stream in listener.incoming() {
         match stream {
             Ok(mut stream) => {
-                let response = b"Hello World";
+                //let response = b"Hello World";
+                let response = my_json.as_bytes();
                 stream.write(response).expect("Response failed");
             }
             Err(e) => {
