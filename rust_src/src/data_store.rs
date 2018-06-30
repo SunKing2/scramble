@@ -11,7 +11,7 @@ struct Person {
 }
 
 
-pub fn get_json() {
+pub fn get_json() -> String {
     let conn = Connection::open_in_memory().unwrap();
 
     conn.execute("CREATE TABLE person (
@@ -49,5 +49,6 @@ pub fn get_json() {
     println!("that was json, now passing...");
 
     //tcp_server::server(&my_json);
+    my_json
 
 }
