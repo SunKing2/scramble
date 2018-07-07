@@ -13,6 +13,12 @@ This is Scramble written in Rust and Elm
 * cargo run
 * It'll tell ya what to do next to see some stuff.
 
+##### Elm stuff
+* go to the top elm folder (the one with the elm-package.json (probably src/elm/src)
+* in bash, enter $./doit
+* go to the top website folder (probably src/website)
+* look at index.html in chrome/firefox, etc.
+
 End geeky developer stuff
 ---
 
