@@ -95,14 +95,6 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ div [] [ myForm model ]
-        , text model.gameMessage
-        , ul [] (List.map viewItem model.guesses)
-        ]
-
-
-myForm model =
-    div []
         [ Html.form [ id "contactform", onSubmit AddGuess ]
             [ div [ id "formcontainer" ]
                 [ label [ for "chat" ]
@@ -110,7 +102,7 @@ myForm model =
                         [ text "Scramble game in progress: " ]
                     ]
                 , textarea [ attribute "cols" "80", id "chat", name "chat", attribute "rows" "7" ]
-                    [ text "Welcome to Scramble" ]
+                    [ text ("Welcome to Scramble\n" ++ toString model.guesses ++ "\n" ++ model.gameMessage) ]
                 ]
             , text "*** Get ready for a round of Scramble (90 Seconds) ***"
             , grid model.letters
