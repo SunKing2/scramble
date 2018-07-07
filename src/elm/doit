@@ -1,0 +1,1 @@
+elm make ScrambleForm.elm  --output ../../src/website/js/scrambleform.js
