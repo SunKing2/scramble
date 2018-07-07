@@ -9,7 +9,7 @@ This is Scramble written in Rust and Elm
 #### Start geeky developer stuff wanting to use this source code ----
 * git clone https://github.com/SunKing2/scramble.git
 * cd scramble
-* cd rust_src
+* cd src/rust
 * cargo run
 * It'll tell ya what to do next to see some stuff.
 
