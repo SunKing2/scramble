@@ -109,7 +109,7 @@ view model =
             , div [ id "guessandbutton" ]
                 [ input [ id "guess", name "guess", placeholder "Enter words here", onInput SetGuess, value model.guess ]
                     []
-                , input [ id "guessbutton", name "submit", type_ "submit" ]
+                , input [ id "guessbutton", name "submit", type_ "submit", value "Send" ]
                     []
                 ]
             ]
