@@ -1,0 +1,215 @@
+section {
+  grid-column: 1 / 4;
+  text-align: center;
+}
+section:nth-of-type(7) {
+  grid-column: 1;
+}
+section:nth-of-type(8) {
+  grid-column: 2;
+}
+section:nth-of-type(9) {
+  grid-column: 3;
+}
+nav {
+  background-color: #60b5cc;
+}
+nav ul {
+  text-align: center;
+}
+nav ul,
+nav li, nav li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #34495E;
+}
+nav ul li {
+  display: inline-block;
+  padding: 1em;
+  margin: 0 1.5em;
+
+  font-family: "Source Sans Pro", "Trebuchet MS", "Lucida Grande",
+    "Bitstream Vera Sans", "Helvetica Neue", sans-serif;
+  color: #293c4b;
+}
+main header {
+  background-color: #9b261d;
+  color: #fff;
+  text-shadow: 2px 2px 2px #333333;
+  padding: 20px 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 10px 0;
+}
+h1 {
+  font-family: museo-slab, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 80px;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-top: 25px;
+  font-weight: 500;
+}
+h2 {
+  margin-bottom: 35px;
+  margin-top: 15px;
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: lighter;
+  margin: 0 0 10px;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main section header {
+  position: relative;
+}
+.github {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+
+
+
+#gamesection {
+  font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #2980b9;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.43;
+  padding: 60px 0 80px;
+}
+
+
+
+
+/* TODO remove me */
+/*
+header {
+  display: none;
+}
+*/
+
+
+
+
+
+#formcontainer {
+  margin-left: 0;
+  /* width is supposed to be specified here width: 66.66667%;
+  */
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* i had to add this to make it work */
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  /* probably don't need to specify color on the child components since this is here, maybe look at them later */
+  color: #fff;
+  font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.43;
+}
+
+#gamesection label:nth-of-type(1) {
+  display: block;
+  text-align: left;
+}
+#chat {
+  font-family: "Ubuntu Mono",Menlo,Monaco,Consolas,"Courier New",monospace;
+  border-width: 0;
+  resize: vertical;
+  height: 316px;
+  overflow-y: scroll;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #555;
+  display: block;
+  font: inherit;
+  margin: 0;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+
+#guess {
+  border-width: 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  outline: 0 !important;
+  height: 36px;
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  font-size: 16px;
+  line-height: 1.43;
+  color: #555;
+  /* I changed from block */
+  display: inline;
+  font-family: inherit;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+input#guessbutton {
+  color: #fff;
+  background-color: #3498DB;
+  border-color: #3498DB;
+  padding: 10px 16px;
+  font-size: 20px;
+  line-height: 1.33;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-family: inherit;
+  text-transform: none;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+
+
+
+
+#formhelp1,
+#formhelp2,
+#contactform {
+  display: inline-block;
+  width: 16.66666667%;
+}
+#contactform {
+  /* this does not allow for 3rd column to fit if full 66 2/3 */
+  width: 65%;
+  display: inline-block;
+}
+/* TODO left arrow should point to middle of form, but not working */
+
+
+#formhelp2 img {
+  transform: rotate(180deg);
+}
+
+#therest {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
