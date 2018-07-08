@@ -1,15 +1,5 @@
 section {
-  grid-column: 1 / 4;
   text-align: center;
-}
-section:nth-of-type(7) {
-  grid-column: 1;
-}
-section:nth-of-type(8) {
-  grid-column: 2;
-}
-section:nth-of-type(9) {
-  grid-column: 3;
 }
 nav {
   background-color: #60b5cc;
@@ -32,11 +22,13 @@ nav ul li {
     "Bitstream Vera Sans", "Helvetica Neue", sans-serif;
   color: #293c4b;
 }
-main header {
+.brand {
   background-color: #9b261d;
   color: #fff;
   text-shadow: 2px 2px 2px #333333;
   padding: 20px 0;
+  position: relative;
+  text-align: center;
 }
 h1,
 h2,
@@ -60,9 +52,6 @@ h2 {
   font-weight: lighter;
   margin: 0 0 10px;
   font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-main section header {
-  position: relative;
 }
 .github {
   position: absolute;
