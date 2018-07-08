@@ -13,7 +13,7 @@ footer { grid-area: footer; }
     'info info info info info info'
     'footer footer footer footer footer footer';
   grid-gap: 0;
-  /*background-color: #2196F3;*/
+  background-color: #2980b9;
   padding: 0;
 }
 
@@ -98,6 +98,12 @@ h2 {
 }
 #apphelp2 img {
   transform: rotate(180deg);
+}
+#apphelp1 {
+    align-self: center;
+}
+#apphelp2 {
+    align-self: end;
 }
 
 
