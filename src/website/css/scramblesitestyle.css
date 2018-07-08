@@ -18,6 +18,16 @@ footer { grid-area: footer; }
 }
 
 
+/* remove the arrows on mobile (apphelp1, apphelp2) */
+@media screen and (max-width: 768px) {
+  #apphelp1, #apphelp2 {
+    display: none;
+  }
+  #app {
+    grid-column: span 12;
+  }
+}
+
 
 
 section {
