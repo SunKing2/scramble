@@ -1,3 +1,25 @@
+header { grid-area: header; }
+#apphelp1 { grid-area: left; }
+#app { grid-area: app; }
+#apphelp2{ grid-area: right; }
+#therest { grid-area: info; }
+footer { grid-area: footer; }
+
+.doc-contents {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left app app app app right'
+    'info info info info info info'
+    'footer footer footer footer footer footer';
+  grid-gap: 0;
+  /*background-color: #2196F3;*/
+  padding: 0;
+}
+
+
+
+
 section {
   text-align: center;
 }
@@ -64,33 +86,23 @@ h2 {
 
 
 
-#formhelp1, #app, #formhelp2 {
+#apphelp1, #app, #apphelp2 {
   font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #2980b9;
   color: #fff;
-  font-size: 16px;
-  line-height: 1.43;
   padding: 60px 0 80px;
 }
-
-
-
-
-/* TODO remove me */
-/*
-header {
-  display: none;
+#apphelp1>p, #app, #apphelp2>p {
+  font-size: 16px;
+  line-height: 1.43;
 }
-*/
-
-
-
+#apphelp2 img {
+  transform: rotate(180deg);
+}
 
 
 #formcontainer {
   margin-left: 0;
-  /* width is supposed to be specified here width: 66.66667%;
-  */
   float: left;
   position: relative;
   min-height: 1px;
@@ -106,6 +118,7 @@ header {
   line-height: 1.43;
 }
 
+/* so the label right above the textarea is on its own line */
 #app label:nth-of-type(1) {
   display: block;
   text-align: left;
@@ -178,24 +191,6 @@ input#guessbutton {
 
 
 
-
-#formhelp1,
-#formhelp2,
-#contactform {
-  display: inline-block;
-  width: 16.66666667%;
-}
-#contactform {
-  /* this does not allow for 3rd column to fit if full 66 2/3 */
-  width: 65%;
-  display: inline-block;
-}
-/* TODO left arrow should point to middle of form, but not working */
-
-
-#formhelp2 img {
-  transform: rotate(180deg);
-}
 
 #therest {
   width: 100%;
