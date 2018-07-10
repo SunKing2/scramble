@@ -11,6 +11,9 @@
 <body>
 
     <header>
+        <div class="navButton">
+          <button onclick="menuButton()">=</button>
+        </div>        
         <nav>
             <ul>
                 <li><a href="http://scramblelovers.com/rules.html">examples</a></li>
@@ -23,7 +26,7 @@
             <h1><img src="images/cogs.png" alt="logo">Scramble</h1>
             <h2>Free multiplayer word game is in progress</h2>
             <a href="https://github.com/SunKing2/scramble">
-                <img alt="Github" title="see code on Github" class="github" src="http://alwayswantedtoplay.com/images/githubcorner.svg"></a>
+              <img alt="Github" title="see code on Github" class="github" src="http://alwayswantedtoplay.com/images/githubcorner.svg"></a>
         </div>
     </header>
 
@@ -142,6 +145,17 @@
             <p><a href="#">Privacy Policy</a></p>
         </div>
     </footer>
+    <script>
+function menuButton() {
+    console.log("menuButton()");
+  var theMenu = document.getElementsByTagName("nav")[0];
+  if (theMenu.className != "show") {
+    theMenu.className = theMenu.className + "show";
+  } else {
+    theMenu.className = "";
+  }
+}
+    </script>
 
 
 </body>
