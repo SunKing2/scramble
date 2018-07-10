@@ -1,0 +1,151 @@
+html {
+    background-color: #3498db;
+    color: #fff;
+    font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+p {
+    line-height: 1.4em;
+}
+body, section {
+    margin: 0;
+}
+
+ul, li {
+    text-align: left;
+}
+
+section {
+    padding: 2.5rem 1vw 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        padding-left: 17vw;
+        padding-right: 17vw;
+    }
+}
+
+.about, .history {
+    background-color: #fff;
+    color: #222;
+}
+h2 {
+    display: inline-block;
+    font-size: 2.05rem;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.7rem;
+}
+.history, .support p, .contact p {
+    font-size: smaller;
+}
+
+@media only screen and (min-width: 768px) {
+    section.history  {
+        padding-left: 25vw;
+        padding-right: 25vw;
+    }
+}
+.history h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin: 0;
+}
+.history ul {
+    margin: .5rem 0;
+}
+input, textarea {
+    font: inherit;
+    font-size: .7rem;
+    box-shadow: inset 0 0 0 rgba(0,0,0,.125);
+}
+input[type=text], input[type=email], textarea {
+    height: 1.5rem;
+}
+input[type=submit] {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #45a1de;
+    outline: 0;
+    padding: 10px 16px;
+    border: 1px;
+    border-color:#3498DB;
+    text-decoration: none;
+    line-height: 1.33;
+    font-weight: 700;
+    border: 1px solid transparent;
+}
+#name, #email, #message {
+    width: 100%;
+    margin: 7px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+#message {
+    height: 8rem;
+}
+
+#imgfortext, #imgforenter {
+    display: block;
+}
+#imgforenter {
+    transform: rotate(180deg);
+}
+
+
+/*TODO remove img and other stuff above this line as needed */
+
+.appwithhelp div {
+  background-color: pink;
+}
+.appwithhelp {
+  background: blue;
+  margin: 0;
+  padding: 3em 1.5rem;
+
+  display: grid;
+  grid-template-columns: 2fr 64.12vw 2fr;
+  /* no real reason anymore for height of each row */
+  grid-template-rows: repeat(12, 1rem);
+  grid-gap: 1rem;
+}
+#arrow1, #arrow2 {
+  display: block;    /*so larrow is flush */
+  width: 80px;       /*so larrow is flush */
+  height: 80px;      /*so larrow is flush */
+}
+#arrow1 {
+  grid-column: 1 / 2;
+  grid-row: 5/ 8;
+  margin-left: auto;  /*so larrow is flush */
+  margin-right: 0;    /*so larrow is flush */
+}
+#texthelp1 {
+  grid-column: 1 / 2;
+  grid-row: 8 / 13;
+}
+#app {
+  grid-column: 2 / 3;
+  grid-row: 1 / 13;
+}
+#texthelp2 {
+  grid-column: 3 / 4;
+  grid-row: 7 / 10;
+}
+#arrow2 {
+  grid-column: 3 / 4;
+  grid-row: 10 / 13;
+}
+#arrow2 img {
+  transform: rotate(180deg);
+}
+
+.app {
+    padding: 0;
+    margin: 0;
+}
