@@ -37,7 +37,13 @@
             </div>
             <div id="texthelp1">Live chat and scoring</div>
 
-            <div id="app">app</div>
+            <div id="app">
+                <div id="elm-area"></div>
+                <script src="js/scrambleform.js"></script>
+                <script>
+                    Elm.ScrambleForm.embed(document.getElementById("elm-area"));
+                </script>
+            </div>
 
             <div id="texthelp2">Enter your words and chat text here.</div>
             <div id="arrow2">
@@ -146,17 +152,17 @@
         </div>
     </footer>
     <script>
-function menuButton() {
-    console.log("menuButton()");
-  var theMenu = document.getElementsByTagName("nav")[0];
-  if (theMenu.className != "show") {
-    theMenu.className = theMenu.className + "show";
-  } else {
-    theMenu.className = "";
-  }
-}
+        function menuButton() {
+            console.log("menuButton()");
+            var theMenu = document.getElementsByTagName("nav")[0];
+            if (theMenu.className != "show") {
+                theMenu.className = theMenu.className + "show";
+            } else {
+                theMenu.className = "";
+            }
+        }
     </script>
-
+    <script src="js/scramblesitescript.js"></script>
 
 </body>
 </html>
