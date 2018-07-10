@@ -79,7 +79,7 @@ input[type=submit] {
     border: 1px solid transparent;
 }
 #name, #email, #message {
-    width: 100%;
+    width: 95%;
     margin: 7px 0;
     border-radius: 3px;
     border: 1px solid #ccc;
@@ -105,13 +105,26 @@ input[type=submit] {
 }
 .appwithhelp {
   margin: 0;
-  padding: 3em 1.5rem;
+  padding: 3rem 1.5rem;
 
   display: grid;
   grid-template-columns: 2fr 64.12vw 2fr;
   /* no real reason anymore for height of each row */
   grid-template-rows: repeat(12, 1rem);
   grid-gap: 1rem;
+}
+/* hide the arrows and their labels on mobile */
+@media only screen and (max-width: 768px) {
+    .app #arrow1, .app #arrow2, #texthelp1, #texthelp2 {
+        display: none;
+    }
+    #app {
+        grid-column: 1 / 4;
+    }
+    .appwithhelp {
+        padding: 3rem 0;
+        grid-template-columns: 0fr 90vw 0fr;
+    }
 }
 #arrow1, #arrow2 {
   display: block;    /*so larrow is flush */
