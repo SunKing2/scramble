@@ -1,5 +1,5 @@
 html {
-    background-color: #3498db;
+    background-color: #2980b9; 
     color: #fff;
     font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 20px;
@@ -104,7 +104,6 @@ input[type=submit] {
   background-color: pink;
 }
 .appwithhelp {
-  background: blue;
   margin: 0;
   padding: 3em 1.5rem;
 
@@ -148,4 +147,82 @@ input[type=submit] {
 .app {
     padding: 0;
     margin: 0;
+}
+
+
+
+
+
+
+nav ul {
+  padding : 0;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.43;
+}
+header *, header *:before, *:after {
+  box-sizing: inherit;
+  color: inherit;
+  font-size: inherit;
+  /* text-align produces diffs */
+  line-height: inherit;
+}
+
+
+nav {
+    background-color: #60b5cc;
+}
+nav ul,
+nav li, nav li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #34495E;
+}
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+    margin: 0 1.5em;
+
+    font-family: "Source Sans Pro", "Trebuchet MS", "Lucida Grande",
+    "Bitstream Vera Sans", "Helvetica Neue", sans-serif;
+    color: #293c4b;
+}
+.brand {
+    background-color: #9b261d;
+    text-shadow: 2px 2px 2px #333333;
+    padding: 20px 0;
+    position: relative;
+}
+header h1,
+header h2,
+header h3,
+header h4 {
+    margin: 10px 0;
+}
+header h1 {
+    font-family: museo-slab, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 80px;
+    letter-spacing: -2px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+header h2 {
+    margin-bottom: 35px;
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+    font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.github {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
