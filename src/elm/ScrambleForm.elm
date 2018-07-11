@@ -95,8 +95,8 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ Html.form [ id "contactform", onSubmit AddGuess ]
-            [ div [ id "formcontainer" ]
+        [ Html.form [ id "scrambleform", onSubmit AddGuess ]
+            [ div [ id "scrambleformcontainer" ]
                 [ label [ for "chat" ]
                     [ span []
                         [ text "Scramble game in progress: " ]
