@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scramble Word Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/scramblesitestyle.css">
+</head>
+
+<body>
+    <div class="doc-contents">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="http://scramblelovers.com/rules.html">examples</a></li>
+                    <li><a href="http://scramblelovers.com/faqs.html">docs</a></li>
+                    <li><a href="https://forums.delphiforums.com/WSA">community</a></li>
+                    <li><a href="index2.html">blog</a></li>
+                </ul>
+            </nav>
+            <div class="brand">
+                <h1><img src="images/cogs.png" alt="logo">Scramble</h1>
+                <h2>Free multiplayer word game is in progress</h2>
+                <a href="https://github.com/SunKing2/scramble">
+                    <img alt="Github" title="see code on Github" class="github" src="http://alwayswantedtoplay.com/images/githubcorner.svg"></a>
+            </div>
+        </header>
+        <section id="apphelp1">
+            <img alt="arrow" src="http://alwayswantedtoplay.com/images/mail-forward.png">
+            <p>
+                live chat and scoring
+            </p>
+        </section>
+        <section id="app">
+            <div id="elm-area"></div>
+            <script src="js/scrambleform.js"></script>
+            <script>
+                Elm.ScrambleForm.embed(document.getElementById("elm-area"));
+            </script>
+        </section>
+        <section id="apphelp2">
+            <p>Enter your words and chat text here
+            </p>
+            <img alt="arrow" src="http://alwayswantedtoplay.com/images/mail-forward.png">
+        </section>
+        <section id="therest"><img alt="about" id="therestimg" src="http://alwayswantedtoplay.com/images/therest.png" /></section>
+
+        <footer class="removeme">I can see your toes down here</footer>
+    </div>
+    <!-- doc-contents -->
+    <script src="js/scramblesitescript.js"></script>
+</body>
+
+</html>
