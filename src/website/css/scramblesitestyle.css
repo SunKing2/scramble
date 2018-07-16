@@ -7,7 +7,7 @@
  * I also only worked on responsiveness quite late, after getting to work on desktop
  * */
 html {
-    background-color: #2980b9; 
+    background-color: #2873b8; 
     color: #fff;
     font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 20px;
@@ -190,7 +190,7 @@ header *, header *:before, *:after {
 
 
 nav {
-    background-color: #60b5cc;
+    background-color: #72abe0;
 }
 nav ul,
 nav li, nav li a {
@@ -350,7 +350,7 @@ nav ul li a:hover {
         border: 0;
         font-size: 100%;
         vertical-align: baseline;
-        background-color: #2980b9;
+        background-color: #2873b8;
         line-height: 1;
         text-align: left;
         font-weight: normal;
